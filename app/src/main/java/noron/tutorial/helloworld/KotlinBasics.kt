@@ -41,8 +41,14 @@ fun main() {
     var month = 4
     when (month){
         in 3..5 -> println("oops")
-        in 12 downTo 2 -> println("winter")
+        !in 12 downTo 2 -> println("winter")
         12, 1, 2 -> println("Winter")
+    }
+
+    /* is */
+    var x : Any = 13.37 //dont know about type of data
+    when(x) {
+        is Int -> println("$x is Int")
     }
 
 }
