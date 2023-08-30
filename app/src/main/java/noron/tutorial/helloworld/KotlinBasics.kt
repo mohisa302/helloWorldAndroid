@@ -4,12 +4,11 @@ fun main() {
     // var=>mutable, val=>immutable
     // TODO: Add new function
 
-    /* Data Types */
-    // /=, +=, *=
-    // Long / Byte / Short / Int / Float / Double
-    // val myFloat: Float = 13.37F // more
-    // var isSunny: Boolean  = true
-    // isSunny = false
+    /* Data Types /=, +=, *= */
+//     Long / Byte / Short / Int / Float / Double
+//     val myFloat: Float = 13.37F // more
+//     var isSunny: Boolean  = true
+//     isSunny = false
 
     /* Operator */
 //    val a = 5.0
@@ -17,15 +16,33 @@ fun main() {
 //    var resultDouble: Double
 //    resultDouble = a / b
 
-    /* comparison operators */
+    /* Comparison operators */
 //    val isEqual = 5==3
 //    println("isEqual is ${"isEqual"}")
 
-
     /* String */
-    val letterChar = 'A'
-    val myStr = "Hello World"
-    var firstChar = myStr[0] // last one: myStr.length - 1
-    var myName = "Mohi"
-    print("Hello "+ myName +"\nLast char: "+ firstChar)
+//    val letterChar = 'A'
+//    val myStr = "Hello World"
+//    var firstChar = myStr[0] // last one: myStr.length - 1
+//    var myName = "Mohi"
+//    print("Hello "+ myName +"\nLast char: "+ firstChar)
+
+    /* When */
+    var season = 3
+    when(season){
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3-> {
+            println("fall")
+        }
+        else -> println("Invalid Season")
+    }
+
+    var month = 4
+    when (month){
+        in 3..5 -> println("oops")
+        in 12 downTo 2 -> println("winter")
+        12, 1, 2 -> println("Winter")
+    }
+
 }
