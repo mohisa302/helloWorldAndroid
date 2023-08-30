@@ -1,9 +1,14 @@
 package noron.tutorial.helloworld
 
 fun main() {
+
+//    println(myFunction(4,6))
+
+
+
     // var=>mutable, val=>immutable
     // TODO: Add new function
-
+;
     /* Data Types /=, +=, *= */
 //     Long / Byte / Short / Int / Float / Double
 //     val myFloat: Float = 13.37F // more
@@ -46,7 +51,7 @@ fun main() {
 //    }
 
     /* is */
-//    var x : Any = 13.37 //dont know about type of data
+//    var x : Any = 13.37 //don't know about type of data
 //    when(x) {
 //        is Int -> println("$x is Int")
 //    }
@@ -70,4 +75,9 @@ fun main() {
 
 
 
+}
+
+//parameters
+fun myFunction(a: Int, b:Int) : Int{
+    return  a + b
 }
