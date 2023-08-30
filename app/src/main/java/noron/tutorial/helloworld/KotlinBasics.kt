@@ -28,27 +28,46 @@ fun main() {
 //    print("Hello "+ myName +"\nLast char: "+ firstChar)
 
     /* When */
-    var season = 3
-    when(season){
-        1 -> println("Spring")
-        2 -> println("Summer")
-        3-> {
-            println("fall")
-        }
-        else -> println("Invalid Season")
-    }
+//    var season = 3
+//    when(season){
+//        1 -> println("Spring")
+//        2 -> println("Summer")
+//        3-> {
+//            println("fall")
+//        }
+//        else -> println("Invalid Season")
+//    }
 
-    var month = 4
-    when (month){
-        in 3..5 -> println("oops")
-        !in 12 downTo 2 -> println("winter")
-        12, 1, 2 -> println("Winter")
-    }
+//    var month = 4
+//    when (month){
+//        in 3..5 -> println("oops")
+//        !in 12 downTo 2 -> println("winter")
+//        12, 1, 2 -> println("Winter")
+//    }
 
     /* is */
-    var x : Any = 13.37 //dont know about type of data
-    when(x) {
-        is Int -> println("$x is Int")
-    }
+//    var x : Any = 13.37 //dont know about type of data
+//    when(x) {
+//        is Int -> println("$x is Int")
+//    }
+
+    /* Do while execute once */
+//    x = 15
+//    do {
+//        print("k")
+//        x++
+//    }while(x <= 10)
+//    println("\ndo")
+
+    /* loop */
+//     for(i in 10 downTo 1 step 2 ){
+//         print("$i")
+//     }
+
+//    for(num in 1..10){ //1 until 10
+//        print("count")
+//    }
+
+
 
 }
