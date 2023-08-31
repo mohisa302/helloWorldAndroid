@@ -1,8 +1,21 @@
 package noron.tutorial.helloworld
 
 fun main() {
+    /* Null references */
+//    var name: String = "Mohi"
+//      var nullName: String? = "Mohi"  // can assign null value
+//       nullName = null
+//    var len = nullName?.length  // if variable is not null return length, else return null
+//
+//    /* Methods */
+//    nullName?.let { println(it.length) }
+//      var name = nullName ?: "Guest"  // if it's null assign Guest
+//      println("name is $name")
+//      println(nullName!!.toLowerCase())
 
-//    println(myFunction(4,6))
+    /* Chain safe call */
+//    val wifeAge: String? = user?.wife?.age ?: 0 // if  user -> wife -> age == null then assign 0
+
 
 
 
