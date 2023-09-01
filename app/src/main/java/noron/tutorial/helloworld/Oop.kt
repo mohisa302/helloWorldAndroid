@@ -16,6 +16,20 @@ interface Drivable {
 
 fun main() {
 
+    /* List */
+    val mixedTypeList: List<Any> = listOf("Mohi", 1, 8)
+    for(value in mixedTypeList) {
+        if(value is Int)
+            println("Int")
+    }
+
+    /* Smart Cast */
+    val obj1: Any = "I have a dream"
+    /* Cast to string*/
+    val str1: String = obj1 as String
+    val str2: String? = obj1 as? String  //safe
+
+
     /* User */
 //    val user1 = User(1, "Denis")
 //    val user2 = User(2 , "K0u9")
