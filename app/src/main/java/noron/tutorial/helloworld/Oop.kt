@@ -3,6 +3,17 @@ package noron.tutorial.helloworld
 import java.time.temporal.TemporalAmount
 
 data class User(val id: Long, var name: String)
+// abstract key word: should be overwritten by sub classes
+//extend class
+interface Drivable {
+    val maxSpeed: Double
+    fun drive(): String
+    fun brake(){
+        println("The driver is braking")
+    }
+
+}
+
 fun main() {
 
     /* User */
@@ -67,7 +78,8 @@ class Person (firstName: String = "John", lastName: String = "Doe", age : Int = 
 }
 
 //sub
-open class Car(val name: String, val brand: String ){
+open class Car(override val maxSpeed: Double , val name: String, val brand: String ):
+    Drivable  {
    open var range: Double = 0.0
 
    fun extendRange(amount: Double){
@@ -75,9 +87,18 @@ open class Car(val name: String, val brand: String ){
            range += amount
    }
 
-  open fun drive(distance: Double){
+   open fun drive(distance: Double){
       println("Drove for $distance KM")
   }
+
+    override fun drive(): String {
+        return "Driving the interface"
+    }
+
+    // run parent brake
+    override fun brake() {
+        super.brake()
+    }
 }
 
 //here we have access to all the methods and variables in car class
