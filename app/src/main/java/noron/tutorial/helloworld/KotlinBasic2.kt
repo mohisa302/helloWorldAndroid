@@ -1,9 +1,26 @@
 package noron.tutorial.helloworld
 
 fun main() {
-    /* Lambda expression */
-    val sum  = {a:Int, b:Int -> println(a+b)}
 
+
+    /* Cast */
+    val location: Any="Kotlin"
+    val safeString: String? = location as? String
+    val safeInt: Int? = location as? Int
+
+
+    /* Nested class */
+    //Static -> accessibility without creating object (inner class)
+    //OuterClass.NestedClass().add
+
+    /* Visibility Modifiers */
+    // public / private
+    // internal -> visible only inside the module
+    // open -> make class parent
+    // protected -> visible to the base and derived class
+
+    /* Lambda expression */
+//    val sum  = {a:Int, b:Int -> println(a+b)}
 
 
     /* Functions of Arraylist */
