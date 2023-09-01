@@ -1,7 +1,5 @@
 package noron.tutorial.helloworld
 
-import java.time.temporal.TemporalAmount
-
 data class User(val id: Long, var name: String)
 // abstract key word: should be overwritten by sub classes
 //extend class
@@ -92,7 +90,7 @@ class Person (firstName: String = "John", lastName: String = "Doe", age : Int = 
 }
 
 //sub
-open class Car(override val maxSpeed: Double , val name: String, val brand: String ):
+open class Car(override val maxSpeed: Double, val name: String, val brand: String ):
     Drivable  {
    open var range: Double = 0.0
 
@@ -105,6 +103,7 @@ open class Car(override val maxSpeed: Double , val name: String, val brand: Stri
       println("Drove for $distance KM")
   }
 
+
     override fun drive(): String {
         return "Driving the interface"
     }
@@ -116,6 +115,6 @@ open class Car(override val maxSpeed: Double , val name: String, val brand: Stri
 }
 
 //here we have access to all the methods and variables in car class
-class ElectricCar(name: String, brand: String, batteryLife: Double ): Car(name, brand){
+class ElectricCar(maxSpeed: Double, name: String, brand: String, batteryLife: Double ): Car(maxSpeed, name, brand){
     override var range = batteryLife * 7  //need open in original class
 }
